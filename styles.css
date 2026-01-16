@@ -1,5 +1,6 @@
-*{
-    border: 1px dotted lightcoral;
+body {
+    font-family: Roboto;
+    margin: 0;
 }
 
 @media (max-width: 800px) {
@@ -15,6 +16,7 @@
     }
 
     .cta {
+        display: flex;
         flex-direction: column;
     }
 }
@@ -24,9 +26,12 @@
     flex-direction: column;
     align-items: center;   
     padding-bottom: 3rem;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
+.bg-1 {
+    background-color: #1f2937;
+}
 /* ------header------ */
 
 .site-header {
@@ -36,14 +41,14 @@
     flex-wrap: wrap;
     margin-bottom: 50px;
     width: 70%;
-
+    color: #f9faf8;
 }
 
 .site-logo {
     display: flex;
     text-decoration: none;
-    font-size: 2em;
-    color: black;
+    font-size: 24px;
+    color: #f9faf8;
 }
 
 
@@ -53,7 +58,6 @@
     gap: 1em;
     list-style-type: none;
     text-align: center;
-
     padding: 0;
 }
 .site-header li {
@@ -69,6 +73,7 @@
     align-items: center;
     width: 70%;
     flex-wrap: wrap;
+    margin-bottom: 10vh;
 }
 
 .left-hero {
@@ -77,8 +82,29 @@
     flex: 1 1 50%;
 }
 
-.left-hero p, .left-hero h1 {
+.left-hero p {
+    font-size: 18px;
+    color: #e5e7eb;
     margin: 0;
+}
+
+.left-hero h1 {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+    margin: 0;
+}
+
+.split-hero-button {
+    display: inline-block;
+    background-color: #3882f6;
+    color: #f9faf8;
+    text-decoration: none;
+    border: none;
+    padding: 1rem ;
+    border-radius: 5px;
+    width:70px;
+    text-align: center;
 }
 
 .right-hero-image {
@@ -86,28 +112,26 @@
     border: 1px solid;
     justify-content: center;
     align-content: center;
-    flex: 1 0 auto;
-    height: 200px;
-    width: 300px;
-
+    flex: 2 0 auto;
+    height: 230px;
+    /* width: 300px; */
+    background-color: gray;
 }
 
 .right-hero-image a {
     align-self: center;
     text-align: center;
-    color: black;
+    color: #f9faf8;
     text-decoration: none;
 }
-
-.split-hero-button {
-
-}
-
 
 /* ------Middle Section------ */
 
 .header-text {
-    margin: 20px;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+    margin: 20px 0;
 }
 
 .box-info-container {
@@ -116,22 +140,15 @@
     gap: 2rem;
     margin-bottom: 75px;
     flex-wrap: wrap;
+    color: #1f2937;
 }
-
-
-/* .box-info-container div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 0 0 0;
-} */
-
 
 .box-info-container a {
     display: flex;
     height: 20ch;
     width: 20ch;
     border-radius: 20px;
+    border: 3px solid #3882f6;
 }
 
 .box-info-container p {
@@ -144,21 +161,31 @@
 }
 
 /* ------Quote Section------ */
+.bg-q {
+    background-color: #e5e7eb;
+    color: #1f2937;
+}
 
 .quote {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 60%;
     justify-content: center;
 }
 
 .quote blockquote {
-
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0;
+    margin-top: 15vh;
 }
 
 .quote p {
     display: inline;
     align-self: flex-end;
+    font-size: 2rem;
+    margin: 0;
 }
 
 /* ------Call to action------ */
@@ -166,13 +193,15 @@
 .cta{
     display: flex;
     align-items: center;
-    box-sizing: border-box;
+    box-sizing: content-box;
     gap: 1em;
-    padding: 20px;
+    padding: 50px 100px;
     margin: 10%;
     flex-wrap: wrap;
     flex: 1 0 auto;
-
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 10px;
 }
 
 .cta-left h1, .cta-left p {
@@ -181,7 +210,15 @@
 }
 
 .signup {
+    display: inline-block;
+    color: #f9faf8;
+    text-decoration: none;
+    border: 1px solid #f9faf8;
+    padding: 10px ;
+    border-radius: 5px;
+    width:100px;
 
+    text-align: center;
 }
 
 /* ------footer------ */
@@ -189,4 +226,6 @@
 .footer {
     align-self: center;
     padding: 1rem;
+    background-color: #1f2937;
+    color: #f9faf8;
 }
